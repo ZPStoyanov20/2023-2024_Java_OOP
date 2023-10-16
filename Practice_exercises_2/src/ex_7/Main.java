@@ -5,27 +5,9 @@ public class Main {
     {
         Scanner scan = new Scanner(System.in);
         String sent = scan.nextLine();
-        int len = 0;
-        boolean flag = false;
-        boolean lastFlag = true;
-        String[] arr = new String[100];
+        String arr[] = sent.split(" ");
 
-        for(int i = 0; i < sent.length(); i++) {
-            String word = "";
-            if (sent.charAt(i) == ' ') {
-                len++;
-                flag = !flag;
-            }
-            if (lastFlag != flag) {
-                arr[len] = word;
-                len++;
-                lastFlag = flag;
-            }
-            else
-            {
-                word += sent.charAt(i);
-            }
-        }
-        System.out.println(arr[0]);
+        for(int i = arr.length - 1; i >= 0;i--)
+            System.out.print(arr[i] + " ");
     }
 }
