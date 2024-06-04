@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>your.group.id</groupId> <!-- Replace 'your.group.id' with your actual group ID -->
+    <artifactId>your-artifact-id</artifactId> <!-- Replace 'your-artifact-id' with your actual artifact ID -->
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <!-- JLayer dependency for MP3 decoding -->
+        <dependency>
+            <groupId>javazoom</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+
+        <!-- TarsosDSP dependency for audio processing -->
+        <dependency>
+            <groupId>com.github.dragoon000320</groupId>
+            <artifactId>tarsosdsp</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <!-- Add other dependencies here if needed -->
+    </dependencies>
+
+</project>
